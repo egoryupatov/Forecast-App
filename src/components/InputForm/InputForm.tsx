@@ -2,12 +2,7 @@ import React, {MouseEventHandler} from "react";
 import {Form} from "../../styles/Form.styled";
 import {Button} from "../../styles/Button.styled";
 import {WeatherWidget} from "../WeatherWidget/WeatherWidget";
-import {InputFormWrapper} from "./InputForm.styled";
-
-interface Coordinates {
-    latitude: string,
-    longitude: string
-}
+import {InputFormWrapperStyled} from "./InputForm.styled";
 
 interface InputFormProps {
 
@@ -20,7 +15,7 @@ export const InputForm: React.FC<InputFormProps> = (props) => {
 
     return (
 
-        <InputFormWrapper>
+<>
 
             {!props.dataIsLoaded ?
                 <Button onClick={props.onSubmit}>
@@ -29,7 +24,7 @@ export const InputForm: React.FC<InputFormProps> = (props) => {
             : ''}
 
             {props.dataIsLoaded ? <WeatherWidget/> : ''}
+</>
 
-        </InputFormWrapper>
     )
 }

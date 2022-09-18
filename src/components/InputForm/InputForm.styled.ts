@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const InputFormWrapper = styled.div`
+export const InputFormWrapperStyled = styled.div`
   display: flex;
   flex-direction: column;
 `

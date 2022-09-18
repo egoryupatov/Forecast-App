@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Button = styled.button`
 
+  display:flex;
   padding: 0.6em 2em;
   border: none;
   outline: none;
@@ -15,6 +16,8 @@ export const Button = styled.button`
   -webkit-user-select: none;
   touch-action: manipulation;
   font-size:25px;
+  width:300px;
+  justify-content: center;
 
 
   &:before {

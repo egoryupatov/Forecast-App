@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Container} from "../styles/Container.styled";
+import {ContainerStyled} from "../styles/Container.styled";
 import {WrapperStyled} from "../styles/Wrapper.styled";
 import {useParams} from "react-router-dom";
 import {WeatherResponseAPI} from "../api/api-types";
@@ -40,14 +40,14 @@ export const City = () => {
 
     return (
 
-        <Container>
+        <ContainerStyled>
             <WrapperStyled>
 
                 {notFound ? <PageNotFound/> : ''}
                 {isLoaded ? <WeatherWidget/> : ''}
 
             </WrapperStyled>
-        </Container>
+        </ContainerStyled>
 
     );
 };
