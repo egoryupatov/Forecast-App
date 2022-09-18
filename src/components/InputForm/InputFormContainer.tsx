@@ -5,11 +5,6 @@ import {getForecast} from "../../store/forecastSlice";
 import {transformAPIWeatherResponse} from "../../api/transformers/transformAPIWeatherResponse";
 import {InputForm} from "./InputForm";
 
-interface Coordinates {
-    latitude: string,
-    longitude: string
-}
-
 export const InputFormContainer = () => {
 
     const dispatch = useAppDispatch();
