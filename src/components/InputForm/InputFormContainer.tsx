@@ -15,8 +15,8 @@ export const InputFormContainer = () => {
 
         e.preventDefault()
 
-        const keyGoogle = 'AIzaSyCmw6tSWXTBZHPeOVvvYR5qmGxJBL8cY6k'
-        const keyOpen = '49ccedf8551f75ed5547f6e9c7d6ad0f';
+        const keyGoogle = '!'
+        const keyOpen = '!';
 
         fetch(`https://www.googleapis.com/geolocation/v1/geolocate?key=${keyGoogle}`, {
             method: 'POST',
